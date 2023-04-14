@@ -1,0 +1,82 @@
+@use 'variaveis';
+
+.hero{
+    
+    &__content{
+        
+        &__title{
+            color:variaveis.$corTituloPrincipal;
+            font-family: Mantinia;
+            text-transform: uppercase;
+            padding: 280px 0px 240px 0px;
+            
+            h1{
+                font-size: 50px;
+            }
+            h2{
+                font-size: 45px;
+            }
+            button {
+                margin-top: 16px;
+                padding: 16px 60px;
+                border: none;
+                border-radius: 3px;
+                text-transform: uppercase;
+                background-color:variaveis.$corTituloPrincipal;
+                color: black;
+                font-weight: bold;
+                cursor: pointer;
+                &:hover{
+                    background-color: darken(variaveis.$corTituloPrincipal, 10%);
+                }
+            }
+            p{
+                margin-top: 16px;
+                font-size: 12px;
+                color: variaveis.$corTextoNormal;
+                span{
+                    color: variaveis.$corTituloPrincipal;
+                }
+            }
+            
+        }
+
+        &__tags{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &__devices{
+                display: flex;
+                align-items: center;
+                
+                img{
+                    height: 80px;
+                    padding-right: 70px;
+                }
+                :nth-child(3){
+                    height: 30px;
+                }
+            }
+
+
+            &__list{
+                 .list-awards{
+                    display: flex;
+
+                    &__items{
+                        text-align: center;
+                        padding:16px;
+                        
+                        span{
+                            color: variaveis.$corTituloPrincipal;
+                        }
+                        p{
+                            color: white;
+                        }
+                    }
+                 }
+                 
+            }
+        }
+    }
+}

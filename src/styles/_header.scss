@@ -1,0 +1,38 @@
+@use 'variaveis';
+
+nav{
+    background-color: variaveis.$corDeFundoPrincipal;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    
+    &__logo{
+       
+        img{
+            height: 60px;
+        }
+    }
+
+    &__menu{
+       
+        &__links{
+            display: flex;
+            justify-content: end;
+
+            &__item{
+                padding-left: 60px;
+                a{
+                    font-size: 18px;
+                    color: variaveis.$corTextoNormal;
+                    &:hover{
+                        color: variaveis.$corTituloPrincipal;
+                    }
+                }
+            }
+        }
+    }
+}

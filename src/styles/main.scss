@@ -1,5 +1,26 @@
+@use 'header';
+@use 'variaveis';
+@use 'hero';
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+body{
+    background-image:url('/src/images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    
+}
+
+.container {
+    max-width: 1360px;
+    width: 100%;
+    margin: 0 auto;
 }
