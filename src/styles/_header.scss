@@ -2,18 +2,29 @@
 
 nav{
     background-color: variaveis.$corDeFundoPrincipal;
+    @media (max-width:912px){
+        padding-bottom: 20px;
+    }
 }
 
 .header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-  
+    
+    @media (max-width:912px){
+        display: block;
+    }
     
     &__logo{
-       
+        @media (max-width:912px){
+            display: flex;
+            justify-content: center;
+        }
+
         img{
             height: 60px;
+            
         }
     }
 
@@ -22,9 +33,16 @@ nav{
         &__links{
             display: flex;
             justify-content: end;
+            @media (max-width:912px){
+                display: flex;
+                justify-content: space-around;
+            }
 
             &__item{
                 padding-left: 60px;
+                @media (max-width:912px){
+                    padding:0;
+                }
                 a{
                     font-size: 18px;
                     color: variaveis.$corTextoNormal;
